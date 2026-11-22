@@ -1,0 +1,27 @@
+name: Go backend tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Task_Management_FullStack_2025/backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+      - name: Unit and API tests
+        run: go test ./...
+      - name: Compile backend
+        run: go build -o /tmp/TaskManagement .
