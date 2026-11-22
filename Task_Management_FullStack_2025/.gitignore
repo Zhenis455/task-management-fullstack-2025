@@ -1,0 +1,14 @@
+# Runtime data (never upload personal tasks)
+backend/data/*.json
+backend/data/*.tmp
+# Build/runtime artifacts
+backend/taskmanager
+backend/taskmanager.exe
+node_modules/
+frontend/dist/
+.DS_Store
+*.log
+.env
+.idea/
+.vscode/
+# Keep TaskManagement.exe: portable one-click Windows version

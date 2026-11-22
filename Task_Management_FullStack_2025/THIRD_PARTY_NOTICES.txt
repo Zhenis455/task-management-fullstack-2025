@@ -1,0 +1,8 @@
+Bundled third-party software:
+
+React 16.0.0 (React UMD) and ReactDOM 16.0.0 from nbclassic installed distribution
+Copyright (c) Facebook, Inc. and its affiliates.
+Licensed under MIT License (https://github.com/facebook/react/blob/v16.0.0/LICENSE).
+Bundled unmodified react.production.min.js and react-dom.production.min.js.
+
+All Task Management application code is newly authored for this ZIP.
